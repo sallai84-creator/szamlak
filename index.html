@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Számlák">
+<meta name="theme-color" content="#0f5c4c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<title>Számlagyűjtő</title>
+<style>
+html,body{margin:0;height:100%;background:#eef1ef}
+@media (prefers-color-scheme:dark){html,body{background:#0f1513}}
+iframe{position:fixed;top:env(safe-area-inset-top);left:0;right:0;bottom:0;width:100%;height:calc(100% - env(safe-area-inset-top));border:0}
+</style>
+</head>
+<body>
+<iframe src="https://script.google.com/macros/s/AKfycbwBjuNlElX181P5073g2zGlJhzTJjqOv152S-1fO2c7UIuYnvYdgO-Laolje04wtaT6/exec" allow="camera; clipboard-write" title="Számlagyűjtő"></iframe>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(function(){});</script>
+</body>
+</html>
